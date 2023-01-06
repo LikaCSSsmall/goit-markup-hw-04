@@ -182,13 +182,15 @@ body {
 }
 
 .sprite-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 112px;
   background-color: var(--footer-logo);
   border-radius: 4px;
   margin-top: 0;
   margin-bottom: 8px;
 }
-
 
 .visually-hidden {
   position: absolute;
@@ -300,8 +302,24 @@ body {
 }
 
 .card-sprites {
-    display: flex;
-    justify-content: space-between;
+  display:flex;
+  justify-content:space-between;
+}
+
+.sprite-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
+.sprite-link:hover,
+.sprite-link:focus,
+.sprite-link:active{
+  background-color: var(--hover-color);
 }
 
 .section-title {
@@ -325,18 +343,32 @@ border: 1px solid #8E8F99;
 border-radius: 4px;
 }
 
-.sprite-link{
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--accent-color);
+.customer-link:hover{
+  border: 1px solid var(--hover-color);
 }
 
-.sprite-link:hover{
-  background-color: var(--hover-color);
+.customer-icon {
+  fill: #8E8F99;
+}
+.customer-icon:hover,
+.customer-icon:focus,
+.customer-icon:active{
+  fill: var(--hover-color);
 }
 
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--primary-text-color);
+}
+
+.content{
+  display: flex;
+}
+
+.footer-content{
+  margin-right: 120px;
+}
 
 .footer-logo {
   font-family: "Raleway";
@@ -348,39 +380,43 @@ border-radius: 4px;
   margin-bottom: 16px;
 }
 
-.footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: var(--primary-text-color);
-}
-
 .info {
   width: 264px;
   color: var(--border-color);
 }
 
 .footer-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--color-button);
-}
-
-.footer-sprites{
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-button);
 }
 
 .footer-list{
   display: flex;
 }
 
-.footer-list .footer-item + .footer-item{
+.footer-list .footer-sprites + .footer-sprites{
   margin-left: 16px;
+}
+
+.footer-sprites{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-sprites:hover,
+.footer-sprites:focus,
+.footer-sprites:active {
+  background-color: #31D0AA;
 }
 
 .buttons {
