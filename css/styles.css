@@ -338,6 +338,7 @@ body {
 }
 
 .customer-link{
+  color: var(--hover-color);
 padding: 16px 32px;
 border: 1px solid #8E8F99;
 border-radius: 4px;
@@ -347,14 +348,14 @@ border-radius: 4px;
   border: 1px solid var(--hover-color);
 }
 
+.customer-link:hover use{
+  fill:var(--hover-color);
+}
+
 .customer-icon {
   fill: #8E8F99;
 }
-.customer-icon:hover,
-.customer-icon:focus,
-.customer-icon:active{
-  fill: var(--hover-color);
-}
+
 
 .footer {
   padding-top: 100px;
@@ -467,7 +468,6 @@ border-radius: 4px;
 }
 
 .product-item:hover {
-  border: 0.5px solid var(--footer-logo);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -477,7 +477,6 @@ border-radius: 4px;
 }
 
 .contant {
-  border: 1px solid var(--border-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
